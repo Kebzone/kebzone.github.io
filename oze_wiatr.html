@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+ <html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Strona o odnawialnych źródłach energii." />
+    <title>Odnawialne źródła energii</title>
+	<link rel="stylesheet" href="style.css">
+		<script>
+	function turbina()
+			{
+			var liczba = parseFloat(document.getElementById("liczba").value);
+			if (isNaN(liczba)) {
+             alert("Wprowadź poprawną liczbę kilowatów.");
+             return;
+         }
+         var result = liczba / 2;
+         var resultDiv = document.createElement("div");
+         resultDiv.innerHTML = "liczba gospodarstw: " + result;
+         var parentDiv = document.getElementById("resultDiv");
+         parentDiv.innerHTML = "";
+         parentDiv.appendChild(resultDiv);
+			}
+		</script>
+  </head>
+
+  <body>
+  <div class="header1">
+  Energia wiatrowa
+  </div>
+  
+  
+  
+	<div class="window1">
+		<h1> Definicja </h1>
+		<p> <b> Energia wiatrowa</b> jest to energia kinetyczna powstająca na skutek występowania różnicy 
+		temperatur między masami powietrza, które się przemieszczają, tworząc wiatr. </p>
+		<p> Uzyskanie mocy przez turbinę wiatrową następuje dzięki przekazaniu energii kinetycznej wiatru do łopat wirnika i 
+		wprawieniu ich w ruch obrotowy. </p>
+		<p> Energia wiatrowa stale zyskuje na popularności i jest jedną z form odnawialnych źródeł energii. </p>
+		<p> Jest to alternatywa dla energetyki konwencjonalnej, opartej na paliwach kopalnych, ponieważ redukuje emisję gazów cieplarnianych; 
+		z tego względu istotna dla idei ochrony środowiska.</p>
+	</div>
+	
+	<div class="window1">
+		<p><h1> Typy energii wiatrowej </h1>
+		<p> Wśród energii wiatrowej są turbiny wiatrowe zarówno na lądzie, jak i na wodzie. </p>
+		<p> Farmy morskie dają jednak większe możliwości w pozyskiwaniu energii, a ponadto ich lokalizacja jest mniej uciążliwa dla ludzi. </p>
+		<p> Minusem jest jednak skomplikowany proces przyłączenia takiej elektrowni do sieci. </p>
+		<p> Wyróżnia się dwa typy turbin wiatrowych – HAWT i VAWT.</p>
+		<p> Turbiny typu HAWT często mają wygląd tradycyjnego wiatraka i dzięki temu są wyjątkowo wydajne podczas silnego wiatru, 
+		są też znacznie tańsze. </p>
+		<p> Jest to najpopularniejszy model turbin wiatrowych.</p>
+		<p> Turbiny typu VAWT mają bardziej futurystyczny kształt i dzięki temu ich praca jest uzależniona od zmian kierunku wiatru.
+		Znacznie lepiej wykorzystują one siłę podmuchów wiatru. </p>
+		<p> Muszą być przez to dużo bardziej wytrzymałe, aby nie ulec zniszczeniu. To powoduje, że są znacznie droższe. </p>
+		<p> Oba rodzaje turbin składają się z takich samych elementów. Jest to wieża, gondola z generatorem oraz wirnik z łopatami.</p>
+	</div>
+
+	<div class="window1"><h1> Jak działa elektrownia wiatrowa?</h1>
+		<p>Elektrownia wiatrowa działa na zasadzie wprawiania w ruch łopat wirnika za pomocą energii wiatru. </p>
+		<p>Następnie energia zostaje przekazana do generatora, który to zmienia ją w energię elektryczną. </p>
+		<p>W ten sposób dochodzi do procesu przekształcania energii kinetycznej wiatru w energię mechaniczną, a następnie w energię elektryczną.</p>
+		<p>Wielkość generatora determinuje, jaka ilość wiatru zostanie zamieniona w energię elektryczną. </p>
+		<p>Każda turbina ma podłączenie do sieci energetycznej i to właśnie tam przekazywana jest energia, która została wyprodukowana.</p>
+	</div>
+	<div class="window1"><h1> Ile gospodarstw może zasilić turbina o danej mocy? </h1>
+		<p> W widocznym poniżej polu wpisz moc twojej turbiny (podaj liczbę kilowattów), by zobaczyć, ile zapotrzebowań gospodarstw może 
+		rocznie spełnić. </p>
+	
+		<input type="text" id="liczba"/>
+		<input type="submit" value="Tu wpisz liczbę kW" onclick="turbina()"/>
+		<div id="resultDiv"></div>
+		
+
+		<p>Przeciętna turbina ma moc 3 megawattów (3000 kilowattów), dzięki czemu może zasilić aż 1500 gospodarstw rocznie!</p>
+	</div>
+
+<br>
+
+<footer>
+	Autorzy: Piotr Krzanowski, Hubert Jaruzel, Maks Smyła, Mikołaj Kujawa
+</footer>
+
+
+<a href="oze_glowna.html" style="text-align: right; float: left;"> <--- poprzednia strona</a>
+
+
+<a href="oze_woda.html" style="text-align: left; float: right;">następna strona ---> </a>
+
+
+  </body>
+</html>
