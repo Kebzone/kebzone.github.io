@@ -1,0 +1,2 @@
+# oze
+strona na informatyke
